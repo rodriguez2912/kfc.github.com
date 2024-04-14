@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+
+/*PRINCIPIO DEL HEADER*/
+.header {
+    background-image: url(../imagenes/fondo1.jpg);
+    background-color: black;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 105vh;
+    padding: 80px 0 0 0 ;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: rgb(212, 14, 14);
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 18px;
+    color: #DCDDE2;
+    display: block;
+    font-weight: 600;
+}
+
+/*NOMBRE-LOGO-MENU-*/
+.menu .navbar ul li a:hover {
+    color: rgb(212, 14, 14);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 80px;
+    color: #fbfcff;
+    margin-bottom: 20px;
+}
+
+.header-txt span {
+    font-size: 90px;
+    color: rgb(212, 14, 14);
+}
+
+.header-txt p {
+    font-size: 18px;
+    color: #c4c4ce;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.header-img {
+    width: 50%;
+    text-align: center;
+}
+
+.header-img img {
+    width: 750px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 20px;
+    border: 1px solid white;
+    color:white;
+    border-radius: 15px;
+    margin-right: 30px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.btn-1:hover {
+    background-color:  rgb(212, 14, 14);
+    color: #fbfcff;
+}
+/*FINAL DEL HEADER*/
+
+
+
+
+/*PRINCIPIO PRODUCTOS*/
+.menu-p1 {
+    padding: 0 0 100px 0;
+}
+
+h2 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+span {
+    color: rgb(212, 14, 14)
+}
+
+.general-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.general-txt {
+    border-radius: 25px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding-bottom: 35px;
+}
+
+.general-txt img {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    height: 250px;
+}
+
+.general-txt h3 {
+    font-size: 18px;
+    color: #292933;
+    padding: 25px 25px 10px 25px;
+}
+
+.general-txt p {
+    font-size: 16px;
+    color: #3a3a48;
+    padding: 0 25px 20px 25px;
+}
+
+.prices {
+    padding: 0 25px 10px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    color: rgb(212, 14, 14);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-2 {
+    display: inline-block;
+    background-color: rgb(212, 14, 14);
+    font-size: 16px;
+    padding: 7px 15px;
+    color: #FBFCFF;
+    border-radius: 10px;
+}
+/*FINAL PRODUCTOS*/
+
+
+
+
+/*PRINCIPIO DE OFERTAS DE MARTES LOCOS*/
+.about {
+    padding: 100px 0;
+    margin-bottom: 100px;
+    background-color: black;
+}
+
+
+.about-content {
+    display: flex;
+}
+
+
+.about-txt {
+    width: 50%;
+}
+
+.about-txt h2 {
+    color: #FBFCFF;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #c4c4ce;
+    margin-bottom: 30px;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    font-size: 68px;
+    font-weight: 750;
+    color: white;
+}
+
+.about-img {
+    width: 50%;
+    text-align: right;
+}
+/*FINAL DE LA OFERTA DE MARTES LOCOS*/
+
+
+
+
+/*NOSOTROS*/
+.tip {
+    text-align: center;
+    font-size: 42px;
+    background: black;
+    font-family: 'Poppins', 'sans-serif';
+    color: white;
+}
+.info {
+    padding-bottom: 100px;
+    display: flex;
+}
+
+.info-img {
+    width: 38%;
+}
+
+.info-img img {
+    border-radius: 10px;
+    width: 680px;
+}
+
+.info-txt {
+    width: 65%;
+    padding-left: 250px;
+    text-align: justify;
+    margin: 0;
+}
+
+.info-txt p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rgb(212, 14, 14);
+    font-size: 13px;
+    padding: 5px 20px;
+    color: #FBFCFF;
+    border-radius: 10px;
+}
+/*FINAL DE NOSOTROS*/
+
+
+
+
+
+
+
+/*PRINCIPIO DE FOOTER*/
+.footer-logo {
+    width: 35%;
+}
+
+.descripcion {
+    color: #fff;
+    padding: 6px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    color: #DCDDE2;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px
+}
+
+.link a:hover {
+    color: rgb(212, 14, 14);
+    
+}
+
+.icono {
+    width: 8.5%;
+    padding: 1px;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    background-color: #33333354;
+    padding: 10px;
+    margin: 0;
+}
+/*FINAL DE FOOTER*/
+
